@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!--Available values for the Target Framework Moniker (TFM) are:
+	net7.0
+    net7.0-android
+    net7.0-ios
+    net7.0-maccatalyst
+    net7.0-macos
+    net7.0-tvos
+    net7.0-windows-->
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
