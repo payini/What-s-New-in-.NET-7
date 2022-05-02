@@ -93,7 +93,7 @@ By default, if you select .NET 7.0 (Preview,) your project will be ready to take
 </Project>
 ```
 
-e available options for the TargetFramework Monicker are shown below:
+The available options for the TargetFramework Monicker are shown below:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
