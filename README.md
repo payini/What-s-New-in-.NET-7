@@ -74,7 +74,7 @@ After
 
 ## Complete Code
 
-* <https://github.com/payini/WhatsNewInDotNet7>
+* [<https://github.com/payini/WhatsNewInDotNet7>](https://github.com/payini/What-s-New-in-.NET-7)
 
 ## Resources
 
