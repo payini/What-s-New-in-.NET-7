@@ -6,14 +6,14 @@
     - [Preview 1](#preview-1)
     - [Preview 2](#preview-2)
     - [Preview 3](#preview-3)
-    - [Demos](#demos)
-      - [Download .NET 7](#download-net-7)
-      - [Create a Console Application in Visual Studio 2022 Preview](#create-a-console-application-in-visual-studio-2022-preview)
-      - [Available TargetFrameworks](#available-targetframeworks)
-      - [StringSyntaxAttribute](#stringsyntaxattribute)
-      - [Hot Reload Improvements](#hot-reload-improvements)
-      - [Nullable Annotations for Microsoft.Extensions](#nullable-annotations-for-microsoftextensions)
-    - [Resources](#resources)
+  - [Demos](#demos)
+    - [Download .NET 7](#download-net-7)
+    - [Create a Console Application in Visual Studio 2022 Preview](#create-a-console-application-in-visual-studio-2022-preview)
+    - [Available TargetFrameworks](#available-targetframeworks)
+    - [StringSyntaxAttribute](#stringsyntaxattribute)
+    - [Hot Reload Improvements](#hot-reload-improvements)
+    - [Nullable Annotations for Microsoft.Extensions](#nullable-annotations-for-microsoftextensions)
+  - [Resources](#resources)
 
 ## What's New in .NET 7
 
@@ -43,9 +43,9 @@
 - Default GC regions
 - ASP.NET Core startup time improvements
 
-### Demos
+## Demos
 
-#### Download .NET 7
+### Download .NET 7
 
 Download and install latest version of .NET 7.
 
@@ -53,7 +53,7 @@ Download and install latest version of .NET 7.
 |--------------|--------|
 |7.0.100-preview.3|<https://dotnet.microsoft.com/en-us/download/dotnet/7.0>|
 
-#### Create a Console Application in Visual Studio 2022 Preview
+### Create a Console Application in Visual Studio 2022 Preview
 
 Create a new project
 
@@ -75,7 +75,7 @@ But the .csproj hast a new TargetFramework
 
 ![picture 5](images/28ae4f02f17d793ea696664fbe01853a87d2c4138f313af480133567ee9da47c.png)  
 
-#### Available TargetFrameworks
+### Available TargetFrameworks
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -96,7 +96,7 @@ But the .csproj hast a new TargetFramework
 </Project>
 ```
 
-#### StringSyntaxAttribute
+### StringSyntaxAttribute
 
 This new attribute allows you to specify what kind of data a string represents, for example Regex, JSON, or a DateTime. This will be use to expand syntax highlighting and colorization.
 
@@ -111,7 +111,7 @@ After
 > [!NOTE]
 > Resource <https://github.com/dotnet/runtime/issues/62505>
 
-#### Hot Reload Improvements
+### Hot Reload Improvements
 
 Hot Reload now has support for the following edit operations in C# for Blazor WebAssembly and .NET for iOS and Android
 
@@ -124,7 +124,7 @@ Hot Reload now has support for the following edit operations in C# for Blazor We
 > [!NOTE]
 > Resource <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
 
-#### Nullable Annotations for Microsoft.Extensions
+### Nullable Annotations for Microsoft.Extensions
 
 As of .NET 7 Preview 1 the following Microsoft.Extensions libraries have been annotated for Nullability:
 
@@ -148,7 +148,7 @@ By the time .NET 7 is released, all Microsoft.Extensions libraries are planned t
 
 - [<https://github.com/payini/WhatsNewInDotNet7>](https://github.com/payini/What-s-New-in-.NET-7)
 
-### Resources
+## Resources
 
 |Resource Title                 |Url                                                     |
 |-------------------------------|--------------------------------------------------------|
