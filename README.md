@@ -116,7 +116,7 @@ The available options for the TargetFramework Monicker are shown below:
 
 ### StringSyntaxAttribute
 
-This new attribute allows you to specify what kind of data a string represents, for example Regex, JSON, or a DateTime. This will be use to expand syntax highlighting and colorization.
+This new attribute allows you to specify what kind of data a string represents, for example Regex, JSON, or a DateTime. This will be use to support more syntax highlighting and colorization options.
 
 Before
 
