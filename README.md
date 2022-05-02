@@ -13,6 +13,7 @@
     - [StringSyntaxAttribute](#stringsyntaxattribute)
     - [Hot Reload Improvements](#hot-reload-improvements)
     - [Nullable Annotations for Microsoft.Extensions](#nullable-annotations-for-microsoftextensions)
+    - [CLI](#cli)
   - [Resources](#resources)
 
 ## What's New in .NET 7
@@ -147,6 +148,39 @@ As of .NET 7 Preview 1 the following Microsoft.Extensions libraries have been an
 By the time .NET 7 is released, all Microsoft.Extensions libraries are planned to be annotaded for Nullability.
 
 - [<https://github.com/payini/WhatsNewInDotNet7>](https://github.com/payini/What-s-New-in-.NET-7)
+
+### CLI
+
+The dotnet new command has been given a more consistent and intuitive interface for many of the subcommands that users already use. Support for tab completion of template options and arguments has been enhanced, now giving rapid feedback on valid arguments and options as the user types.
+
+dotnet new -help
+
+```dos
+ carl ❯❯ dotnet new --help
+Description:
+  Template Instantiation Commands for .NET CLI.
+
+Usage:
+  dotnet new [<template-short-name> [<template-args>...]] [options]
+  dotnet new [command] [options]
+
+Arguments:
+  <template-short-name>  A short name of the template to create.
+  <template-args>        Template specific options to use.
+
+Options:
+  -?, -h, --help  Show command line help.
+
+Commands:
+  install <package>       Installs a template package.
+  uninstall <package>     Uninstalls a template package.
+  update                  Checks the currently installed template packages for update, and install the updates.
+  search <template-name>  Searches for the templates on NuGet.org.
+  list <template-name>    Lists templates containing the specified template name. If no name is specified, lists all templates.
+```
+
+- Resource 1: <https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-2/>
+- Resource 2: <https://github.com/dotnet/templating/issues/2191>
 
 ## Resources
 
