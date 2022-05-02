@@ -18,12 +18,14 @@
 
 ## What's New in .NET 7
 
-.NET 7 builds on the foundation established by .NET 6, which includes a unified set of base libraries, runtime, and SDK, a simplified development experience, and higher developer productivity. Major areas of focus for .NET 7 include improved support for cloud native scenarios, tools to make it easier to upgrade legacy projects, and simplifying the developer experience by making it easier to work with containers.
+.NET 7 builds on top of .NET 6, which includes a unified set of base libraries, runtime, and SDK, a simplified development experience, and higher developer productivity. Major areas of focus for .NET 7 include improved support for cloud native scenarios, tools to make it easier to upgrade legacy projects, and simplifying the developer experience by making it easier to work with containers.
 
 > [!NOTE]
 > Resource: <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
 
 ## What's New in .NET 7 Group By Preview
+
+Several improvements have been made in .NET 7 Previews 1, 2 and 3, some of them we will cover in some demos.
 
 ### Preview 1
 
@@ -72,11 +74,26 @@ Program.cs looks the same as .NET 6.0
 
 ![picture 4](images/4829c4ae194e6b606ff84da738a1e59e13b234f0f99660d0c5e4015b76cfe703.png)  
 
-But the .csproj hast a new TargetFramework
+But the .csproj has a new TargetFramework
 
 ![picture 5](images/28ae4f02f17d793ea696664fbe01853a87d2c4138f313af480133567ee9da47c.png)  
 
 ### Available TargetFrameworks
+
+By default, if you select .NET 7.0 (Preview,) your project will be ready to take advantage of the .NET 7.0 features, if you are upgrading a .NET 6 project to .NET 7, all you have to do is to change the TargetFramework value from net6.0 to .net7.0 as shown below.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
+```
+
+e available options for the TargetFramework Monicker are shown below:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
