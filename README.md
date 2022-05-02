@@ -2,7 +2,8 @@
 
 .NET 7 builds on the foundation established by .NET 6, which includes a unified set of base libraries, runtime, and SDK, a simplified development experience, and higher developer productivity. Major areas of focus for .NET 7 include improved support for cloud native scenarios, tools to make it easier to upgrade legacy projects, and simplifying the developer experience by making it easier to work with containers.
 
-* Resource: <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
+> [!NOTE]
+> Resource: <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
 
 ## Download .NET 7
 
@@ -67,10 +68,43 @@ After
 
 ![picture 10](images/4625bf3ba0630af44a20b1c72796a82060305ef63abfd386687acb44c84dadfb.png)  
 
-* Resource <https://github.com/dotnet/runtime/issues/62505>
+> [!NOTE]
+> Resource <https://github.com/dotnet/runtime/issues/62505>
 
-## 
+## Hot Reload Improvements
 
+Hot Reload now has support for the following edit operations in C# for Blazor WebAssembly and .NET for iOS and Android
+
+* Adding static lambdas to existing methods
+* Adding lambdas that capture this to existing methods that already have at least one lambda that captures this
+* Adding new static or non-virtual instance methods to existing classes
+* Adding new static fields to existing classes
+* Adding new classes
+
+> [!NOTE]
+> Resource <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
+
+## Nullable Annotations for Microsoft.Extensions
+
+As of .NET 7 Preview 1 the following Microsoft.Extensions libraries have been annotated for Nullability:
+
+* Microsoft.Extensions.DependencyInjection.Abstractions
+* Microsoft.Extensions.Logging.Abstractions
+* Microsoft.Extensions.Primitives
+* Microsoft.Extensions.FileSystemGlobbing
+* Microsoft.Extensions.DependencyModel
+* Microsoft.Extensions.Configuration.Abstractions
+* Microsoft.Extensions.FileProviders.Abstractions
+* Microsoft.Extensions.FileProviders.Physical
+* Microsoft.Extensions.Configuration
+* Microsoft.Extensions.Configuration.Binder
+* Microsoft.Extensions.Configuration.CommandLine
+* Microsoft.Extensions.Configuration.EnvironmentVariables
+* Microsoft.Extensions.Configuration.FileExtensions
+* Microsoft.Extensions.Configuration.Ini
+* Microsoft.Extensions.Configuration.Json
+
+By the time .NET 7 is released, all Microsoft.Extensions libraries are planned to be annotaded for Nullability.
 
 ## Complete Code
 
