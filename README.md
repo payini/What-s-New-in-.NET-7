@@ -1,11 +1,51 @@
-# What's New in .NET 7
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+  - [What's New in .NET 7](#whats-new-in-net-7)
+  - [What's New in .NET 7 Group By Preview](#whats-new-in-net-7-group-by-preview)
+    - [Preview 1](#preview-1)
+    - [Preview 2](#preview-2)
+    - [Preview 3](#preview-3)
+    - [Demos](#demos)
+      - [Download .NET 7](#download-net-7)
+      - [Create a Console Application in Visual Studio 2022 Preview](#create-a-console-application-in-visual-studio-2022-preview)
+      - [Available TargetFrameworks](#available-targetframeworks)
+      - [StringSyntaxAttribute](#stringsyntaxattribute)
+      - [Hot Reload Improvements](#hot-reload-improvements)
+      - [Nullable Annotations for Microsoft.Extensions](#nullable-annotations-for-microsoftextensions)
+    - [Resources](#resources)
+
+## What's New in .NET 7
 
 .NET 7 builds on the foundation established by .NET 6, which includes a unified set of base libraries, runtime, and SDK, a simplified development experience, and higher developer productivity. Major areas of focus for .NET 7 include improved support for cloud native scenarios, tools to make it easier to upgrade legacy projects, and simplifying the developer experience by making it easier to work with containers.
 
 > [!NOTE]
 > Resource: <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
 
-## Download .NET 7
+## What's New in .NET 7 Group By Preview
+
+### Preview 1
+
+- Nullable annotations for Microsoft.Extensions
+- JIT compiler optimizations
+- New APIs
+- Support for more hot reload scenarios
+
+### Preview 2
+
+- Specialized RegEx pattern matching engine
+- Improved tab completion capabilities to explore templates and parameters when using dotnet new
+- App Trimming due to NativeAOT (Native Ahead of Time compilation) support.
+
+### Preview 3
+
+- Native AOT
+- Default GC regions
+- ASP.NET Core startup time improvements
+
+### Demos
+
+#### Download .NET 7
 
 Download and install latest version of .NET 7.
 
@@ -13,7 +53,7 @@ Download and install latest version of .NET 7.
 |--------------|--------|
 |7.0.100-preview.3|<https://dotnet.microsoft.com/en-us/download/dotnet/7.0>|
 
-## Create a Console Application in Visual Studio 2022 Preview
+#### Create a Console Application in Visual Studio 2022 Preview
 
 Create a new project
 
@@ -35,7 +75,7 @@ But the .csproj hast a new TargetFramework
 
 ![picture 5](images/28ae4f02f17d793ea696664fbe01853a87d2c4138f313af480133567ee9da47c.png)  
 
-## Available TargetFrameworks
+#### Available TargetFrameworks
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -56,7 +96,7 @@ But the .csproj hast a new TargetFramework
 </Project>
 ```
 
-## StringSyntaxAttribute
+#### StringSyntaxAttribute
 
 This new attribute allows you to specify what kind of data a string represents, for example Regex, JSON, or a DateTime. This will be use to expand syntax highlighting and colorization.
 
@@ -71,48 +111,46 @@ After
 > [!NOTE]
 > Resource <https://github.com/dotnet/runtime/issues/62505>
 
-## Hot Reload Improvements
+#### Hot Reload Improvements
 
 Hot Reload now has support for the following edit operations in C# for Blazor WebAssembly and .NET for iOS and Android
 
-* Adding static lambdas to existing methods
-* Adding lambdas that capture this to existing methods that already have at least one lambda that captures this
-* Adding new static or non-virtual instance methods to existing classes
-* Adding new static fields to existing classes
-* Adding new classes
+- Adding static lambdas to existing methods
+- Adding lambdas that capture this to existing methods that already have at least one lambda that captures this
+- Adding new static or non-virtual instance methods to existing classes
+- Adding new static fields to existing classes
+- Adding new classes
 
 > [!NOTE]
 > Resource <https://devblogs.microsoft.com/dotnet/announcing-net-7-preview-1/>
 
-## Nullable Annotations for Microsoft.Extensions
+#### Nullable Annotations for Microsoft.Extensions
 
 As of .NET 7 Preview 1 the following Microsoft.Extensions libraries have been annotated for Nullability:
 
-* Microsoft.Extensions.DependencyInjection.Abstractions
-* Microsoft.Extensions.Logging.Abstractions
-* Microsoft.Extensions.Primitives
-* Microsoft.Extensions.FileSystemGlobbing
-* Microsoft.Extensions.DependencyModel
-* Microsoft.Extensions.Configuration.Abstractions
-* Microsoft.Extensions.FileProviders.Abstractions
-* Microsoft.Extensions.FileProviders.Physical
-* Microsoft.Extensions.Configuration
-* Microsoft.Extensions.Configuration.Binder
-* Microsoft.Extensions.Configuration.CommandLine
-* Microsoft.Extensions.Configuration.EnvironmentVariables
-* Microsoft.Extensions.Configuration.FileExtensions
-* Microsoft.Extensions.Configuration.Ini
-* Microsoft.Extensions.Configuration.Json
+- Microsoft.Extensions.DependencyInjection.Abstractions
+- Microsoft.Extensions.Logging.Abstractions
+- Microsoft.Extensions.Primitives
+- Microsoft.Extensions.FileSystemGlobbing
+- Microsoft.Extensions.DependencyModel
+- Microsoft.Extensions.Configuration.Abstractions
+- Microsoft.Extensions.FileProviders.Abstractions
+- Microsoft.Extensions.FileProviders.Physical
+- Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.Binder
+- Microsoft.Extensions.Configuration.CommandLine
+- Microsoft.Extensions.Configuration.EnvironmentVariables
+- Microsoft.Extensions.Configuration.FileExtensions
+- Microsoft.Extensions.Configuration.Ini
+- Microsoft.Extensions.Configuration.Json
 
 By the time .NET 7 is released, all Microsoft.Extensions libraries are planned to be annotaded for Nullability.
 
-## Complete Code
+- [<https://github.com/payini/WhatsNewInDotNet7>](https://github.com/payini/What-s-New-in-.NET-7)
 
-* [<https://github.com/payini/WhatsNewInDotNet7>](https://github.com/payini/What-s-New-in-.NET-7)
+### Resources
 
-## Resources
-
-|Resource                       |Url                                                     |
+|Resource Title                 |Url                                                     |
 |-------------------------------|--------------------------------------------------------|
 |.NET 7 Downloads               |<https://dotnet.microsoft.com/en-us/download/dotnet/7.0>|
 |ASP.NET Core Roadmap for .NET 7|<https://github.com/dotnet/aspnetcore/issues/39504>     |
@@ -120,6 +158,3 @@ By the time .NET 7 is released, all Microsoft.Extensions libraries are planned t
 |Announcing .NET 7 Preview 2 – The New, ‘New’ Experience|<https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-2/>|
 |Announcing .NET 7 Preview 2|<https://devblogs.microsoft.com/dotnet/announcing-dotnet-7-preview-3/>|
 |StringSyntaxAttribute|<https://github.com/dotnet/runtime/issues/62505>|
-|||
-|||
-|||
